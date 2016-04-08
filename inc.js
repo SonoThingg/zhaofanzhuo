@@ -24,6 +24,7 @@ var AJAX={
 			window.alert("不能创建XMLHttpRequest对象实例.");
 			return false;
 		}
+		//print("HelloWorld")
 		AJAX.http_request.onreadystatechange = AJAX.processRequest;
 		AJAX.http_request.open("GET", url+"&"+Math.random(), true);
 		AJAX.http_request.send(null);
